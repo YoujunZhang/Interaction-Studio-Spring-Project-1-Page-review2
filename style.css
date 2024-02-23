@@ -1,0 +1,206 @@
+   body{
+      /* Used to enable scrolling */
+      /* background-image: linear-gradient(rgb(46, 46, 255),rgb(4, 4, 97)) */
+      /* linear-gradient(55deg, rgb(7, 7, 116) 0%, #1815cd 51%, rgb(34, 58, 145) 85%); */
+      /* text-shadow: 0 0 3px rgb(202, 177, 35); */
+      color: darkblue;
+      filter: blur(1px);
+      background: linear-gradient(270deg, #005fe3, #0036bb, #001556);
+      background-size: 600% 600%;
+      height: 10000px;
+      
+  
+      -webkit-animation: AnimationName 36s ease infinite;
+      -moz-animation: AnimationName 36s ease infinite;
+      animation: AnimationName 36s ease infinite;
+      
+    }
+
+
+  
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  
+  
+  
+
+ul {
+  display: relative;
+  margin-top: -20px;
+  text-align: justify;
+  padding: 350px;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  
+
+@keyframes example{ 
+    
+} 
+@keyframes example{
+0% { 
+        letter-spacing: 0px; 
+        transition: smooth;
+        margin-top: 0px;
+    } 
+
+
+    20% { 
+        letter-spacing: 60px; 
+        margin-top: 0px;
+       
+    } 
+
+    100% { 
+        letter-spacing: 2px; 
+    } 
+}
+  
+
+  
+  
+  li {
+    list-style: none;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 25px;
+    filter: blur(1px);
+    transition: all 2s;
+    
+    &:hover, &:hover ~ li {
+      transform: rotate(20deg) translatey(-20px);
+      opacity: 0;
+      filter: blur(20px);
+    }
+    
+  }
+}
+
+
+article{
+    margin-top: -120px;
+    padding: 20px;
+    text-align: justify;
+    font-size: 17px;
+        color: blanchedalmond;
+        text-shadow: 0 0 8px #fff;
+        animation-name: cross-fade-blur;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        @for $i from 1 through 10 {
+          &:nth-child(#{$i}) {
+            animation-delay: $i * 0.04s;
+          }
+        }
+      }
+
+      body #one {
+        animation: test 10s linear;
+   
+      }
+
+
+  @keyframes test {
+    from {
+      opacity: 0;
+      visibility: hidden;
+      filter: blur(0.2ex);
+    }
+    to {
+      opacity: 1;
+      visibility: visible;
+      filter: blur(0ex);
+    }
+
+
+  }
+
+
+
+
+  span{
+    text-decoration-line: underline;
+    text-decoration-color: rgb(243, 243, 141);
+    text-decoration-thickness: 1.7px;
+    animation-name: word;
+    animation-duration: 7s;
+    animation-iteration-count: 3;
+    transition-delay: 1s;
+  }
+
+  @keyframes word{
+    0% { 
+        letter-spacing: 0px; 
+    } 
+
+    20% { 
+        letter-spacing: 40px; 
+    } 
+
+    100% { 
+        letter-spacing: 2px; 
+        color: blanchedalmond;
+        text-shadow: 0 0 7px #fff;
+        font-weight: thin;
+    } 
+  }
+
+
+
+  .gleam{
+    color: blanchedalmond;
+    text-shadow: 0 0 8px #fff;
+    animation: 6s linear;
+    animation-name: gleam;
+  }
+
+
+  @keyframes gleam{
+    from{
+        opacity: 0;
+        visibility: hidden;
+        filter: blur(0.5ex);
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+        filter: blur(0ex);
+    }
+  }
+
+ button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    display: flex;
+    margin-left: 497px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 60%;
+    height: 10px;
+    border-radius: 25px;
+    letter-spacing: 36px;
+
+  }
+
+  button:hover{
+    text-shadow:1px 0px 2px gold; 
+    filter: blur(2px);
+    font-size: 23px;
+  }
+
