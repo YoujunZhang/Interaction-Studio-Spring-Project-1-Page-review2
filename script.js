@@ -1,3 +1,3 @@
 function myFunction() {
-    location.replace("https://youjunzhang.github.io/Interaction-Studio-Spring-Project-1-Page-2-1/")
+    location.replace("https://youjunzhang.github.io/Interaction-Studio-Spring-Project-1-Page-review3/")
   }
